@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Background image for the title section */
+        .title-section {
+            background-image: url('images/headshot.jpg');
+            background-size: cover;
+            background-position: center center; /* Adjust position to center middle */
+            color: #fff; /* Ensure text is readable */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 200px 0; /* Adjust padding to make the section bigger */
+            flex-direction: column;
+        }
+
+        /* Typing effect for the text */
+        .typing-effect {
+            font-size: 2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #fff;
+            animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% { width: 0; }
+            5% { width: 1ch; }
+            10% { width: 2ch; }
+            15% { width: 3ch; }
+            20% { width: 4ch; }
+            25% { width: 5ch; }
+            30% { width: 6ch; }
+            35% { width: 7ch; }
+            40% { width: 8ch; }
+            45% { width: 9ch; }
+            50% { width: 10ch; }
+            55% { width: 11ch; }
+            60% { width: 12ch; }
+            65% { width: 13ch; }
+            70% { width: 14ch; }
+            75% { width: 15ch; }
+            80% { width: 16ch; }
+            85% { width: 17ch; }
+            90% { width: 18ch; }
+            95% { width: 19ch; }
+            100% { width: 20ch; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
+
+        /* Metallic shine effect */
+        .shine {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #fff, #ccc, #fff);
+            background-size: 200% auto;
+            color: #000;
+            background-clip: text;
+            text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 2rem 1rem;
+            margin: 1rem 0;
+        }
+        
+        h1, h2, h3 {
+            color: #333;
+        }
+        
+        .project, .experience {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="title-section">
+        <h1 class="shine">Welcome to My Portfolio</h1>
+        <p class="typing-effect">Hi, I'm Naveen Kamath.</p>
+    </section>
+
+    <section id="mission">
+        <h2>My Mission</h2>
+        <p>Artificial Intelligence is a huge buzz word these days. 
+            In fact, when I interned at the Wright Patterson Air Force Research Lab, last summer, people would cheer every time AI was mentioned, even if they had no clue what it did. 
+            In high school, I was curious about the possibilities of AI. I took courses from Coursera, Kaggle, and Udemy to learn more. I learnt how to manipulate large sets of data using Scikit-learn.
+             However, I was discouraged because most of my algorithms had no real-world applications. </p>
+        <p>Back in high school, I also volunteered over 200 hours at the Atrium Medical Hospital. From this experience, I got to interact with patients and families in some of their darkest hours. 
+            These experiences piqued my interest in the applications of Artificial Intelligence (AI) in medicine. Currently, AI medical software is used in the Emergency Room for mammography interpretation and trying to detect head bleeds or pulmonary emboli.
+             However, the current software produces vague results and is finicky. A degree in Computer Science would help me gain the required technical skills to work on AI medical software to improve patient care and hospital efficiency. </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Look2Type</h3>
+            <ul>
+                <li>Digital keyboard that uses eye tracing to allow users with paralysis to type with their eyes</li>
+                <li>Eye tracing algorithm uses artificial intelligence to predict where the user is looking</li>
+                <li>The throughput and complement times with nominal indexes of difficulty was 0.7 bits </li>
+            </ul>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <p><b>Programming Language Proficiency: </b> Java, Python, C#, HTML, CSS, MATLAB</p>
+        <p><b>Technologies: </b> NumPy, Pandas, Git, scikit-learn, Flask, Text to Speech, PyTorch</p>
+        <p><b>Developer Tools: </b> GitHub, VS Code, Android Studio, Eclipse, Unreal Engine 5</p>
+        <p><b>Concepts: </b> Machine Learning, Deep Learning, Data Pipeline, Object-Oriented Programming, Network Systems</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Software Engineer Intern</h3>
+            <p>Air Force Research Lab (@ARCTOS)</p>
+            <ul>
+                <li>Constructed a multiplayer touch screen application to gamify the handling logistics of transporting packages with a remote-controlled aircraft to be utilized in a research study</li>
+                <li>Incorporated system networks for seamless multiplayer functionality</li>
+                <li>Created CSV, JSON, spreadsheet files to log user data to measure cognitive capacity and fatigue </li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h3>Software Engineer Intern</h3>
+            <p>Air Force Research Lab</p>
+            <ul>
+                <li>Constructed Mixed Reality simulations using Unity Game Engine and C# scripts</li>
+                <li>Designed a VR elevated radial maze with objectives on each arm (shooting targets, retrieving objects) while collecting biometrics (heart rate, pupil dilation) using HP Omni Headset</li>
+                <li>Created CSV, .JSON, spreadsheet files to log user data for further analysis</li>
+            </ul>
+            <a href="https://youtu.be/dg3sBnmgYC8?si=W7RENniJAZn9Ymm6">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><b>Email:</b> naveen@kamaths.com</p>
+        <p><b>Number:</b> +1 937-829-1176</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Naveen Kamath. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
