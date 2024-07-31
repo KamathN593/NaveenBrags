@@ -19,7 +19,7 @@ const myComponenet = (props) => <div>{props.content}</div>;
 
 
 //someReact Program
-//adding comments
+
 
 /* Go to react.new and paste this code in to see it work! */
 import React from "react";
